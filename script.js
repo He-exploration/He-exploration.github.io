@@ -6,11 +6,11 @@
       eyebrow: 'Personal website', role: 'Ph.D. student · 2026 cohort',
       college: 'College of AI', university: 'Tsinghua University',
       intro: 'I’m a Ph.D. student at the College of AI, Tsinghua University, where I began my doctoral studies in 2026.',
-      bio: 'My research interests include foundation model training and optimization, machine learning systems, and world models. I’m particularly interested in efficient and numerically stable training at scale.',
+      bio: 'My research interests include foundation model training and optimization, machine learning systems, visual self-supervised learning, and representation learning. I’m particularly interested in efficient and numerically stable training at scale.',
       researchTitle: 'Research interests',
       area1: 'Foundation models & optimization', detail1: 'Training large-scale models efficiently and with numerical stability.',
       area2: 'Machine learning systems', detail2: 'Systems for efficient large-scale model training.',
-      area3: 'World models', detail3: 'Learning representations and dynamics of the world.',
+      area3: 'Visual self-supervised learning & representation learning', detail3: 'Learning visual representations through self-supervision.',
       email: 'Email', contactTitle: 'Contact & links', footer: '温和 · Tsinghua University'
     },
     zh: {
@@ -18,11 +18,11 @@
       eyebrow: '个人主页', role: '2026级博士生',
       college: '人工智能学院', university: '清华大学',
       intro: '我是温和，清华大学人工智能学院2026级博士生。',
-      bio: '我的研究兴趣包括基础模型的训练与优化、机器学习系统以及世界模型，尤其关注大规模模型训练的效率与数值稳定性。',
+      bio: '我的研究兴趣包括基础模型的训练与优化、机器学习系统以及视觉自监督学习与表征学习，尤其关注大规模模型训练的效率与数值稳定性。',
       researchTitle: '研究兴趣',
       area1: '基础模型与优化', detail1: '大规模模型训练的效率与数值稳定性。',
       area2: '机器学习系统', detail2: '面向大规模模型高效训练的系统。',
-      area3: '世界模型', detail3: '学习世界的表征与动态规律。',
+      area3: '视觉自监督学习与表征学习', detail3: '通过自监督学习探索视觉表征。',
       email: '邮箱', contactTitle: '联系与链接', footer: '温和 · 清华大学'
     }
   };
