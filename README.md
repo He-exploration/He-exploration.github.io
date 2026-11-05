@@ -10,6 +10,7 @@ A small static site with English and Chinese text, responsive layouts, and no ex
 - `script.js`: both language versions. Keep the English copy in sync with `index.html`.
 - `style.css`: typography, colors, and responsive layout.
 - `favicon.svg`: browser icon.
+- `portrait.jpg`: personal photo displayed alongside the introduction.
 
 ## Preview
 

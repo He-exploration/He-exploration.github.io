@@ -19,13 +19,16 @@ button{font:inherit}
 .language-switch button{border:0;background:transparent;padding:6px 3px;cursor:pointer;color:var(--muted);min-height:32px}
 .language-switch button[aria-pressed="true"]{color:var(--accent);font-weight:650}
 .language-switch span{color:#b8b4be}
-.intro{display:grid;grid-template-columns:0.9fr 1.4fr;gap:64px;padding:88px 0 80px}
+.intro{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);grid-template-areas:"portrait identity" "portrait about";column-gap:64px;row-gap:26px;padding:64px 0 70px;align-items:start}
+.identity{grid-area:identity}
+.portrait{grid-area:portrait;align-self:center;margin:0;width:100%;max-width:340px}
+.portrait img{display:block;width:100%;height:auto;border-radius:6px}
 .eyebrow{font-size:11px;letter-spacing:2.1px;text-transform:uppercase;color:var(--accent);margin:0 0 23px;font-weight:600}
-h1{font:400 72px/1.05 Georgia,"Times New Roman",serif;letter-spacing:-3px;margin:0 0 26px}
-h1 span{display:block;font:400 25px/1.5 "Songti SC","STSong","Noto Serif CJK SC",serif;letter-spacing:7px;margin-top:17px;color:var(--muted)}
+h1{display:flex;flex-wrap:wrap;align-items:baseline;gap:18px;font:400 72px/1.05 Georgia,"Times New Roman",serif;letter-spacing:-3px;margin:0 0 22px}
+h1 span{font:400 25px/1.5 "Songti SC","STSong","Noto Serif CJK SC",serif;letter-spacing:5px;color:var(--muted)}
 .role{font-size:13px;margin:0 0 10px;color:var(--ink)}
 .affiliation{font-size:13px;color:var(--muted);margin:0;line-height:1.8}
-.about{padding-top:37px;max-width:520px}
+.about{grid-area:about;max-width:520px}
 .about p{font-size:16px;color:var(--muted);margin:0 0 22px;line-height:1.9}
 .about .about-lead{font-size:22px;line-height:1.6;color:var(--ink);letter-spacing:-.35px}
 .intro-links{display:flex;gap:28px;align-items:center}
@@ -48,7 +51,7 @@ html[lang="zh-CN"] .about p{line-height:2}
 html[lang="zh-CN"] .about .about-lead{font-size:21px;line-height:1.8}
 html[lang="zh-CN"] .eyebrow{letter-spacing:3px}
 @media(min-width:1200px){.page{padding-top:13px}}
-@media(max-width:760px){.page{padding:0 28px}.site-header{padding:26px 0}.header-right{gap:24px}.site-header nav{gap:20px}.intro{grid-template-columns:1fr;gap:33px;padding:49px 0 48px}h1{font-size:65px}.about{padding:0;max-width:none}.about .about-lead{font-size:21px}.section{grid-template-columns:1fr;gap:25px;padding:30px 0 34px}.section-label{gap:13px}.research-item{padding-bottom:20px;margin-bottom:20px}.contact{padding-bottom:35px}footer{padding:21px 0 28px}}
+@media(max-width:760px){.page{padding:0 28px}.site-header{padding:26px 0}.header-right{gap:24px}.site-header nav{gap:20px}.intro{grid-template-columns:minmax(0,1fr);grid-template-areas:"identity" "portrait" "about";gap:30px;padding:42px 0 48px}.portrait{max-width:300px}h1{font-size:65px}.about{padding:0;max-width:none}.about .about-lead{font-size:21px}.section{grid-template-columns:1fr;gap:25px;padding:30px 0 34px}.section-label{gap:13px}.research-item{padding-bottom:20px;margin-bottom:20px}.contact{padding-bottom:35px}footer{padding:21px 0 28px}}
 @media(max-width:380px){.page{padding:0 21px}.header-right{gap:17px}.site-header nav{gap:14px}h1{font-size:60px}.contact-link{font-size:12px}footer{font-size:9px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{body{background:white}.page{max-width:none;padding:0}.site-header,.skip-link{display:none}.intro{padding:20px 0 36px}.section{break-inside:avoid}footer{padding-bottom:0}}
